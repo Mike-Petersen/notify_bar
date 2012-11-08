@@ -19,7 +19,7 @@ module NotifyBar
 				javascript_tag do
 					"$(document).ready(function() {
 						#{notify_bar_js html, opts}
-					});"
+					});".html_safe
 				end
 			end
 			
